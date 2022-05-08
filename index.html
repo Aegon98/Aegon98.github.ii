@@ -124,9 +124,11 @@
             }
             return i;
         }
-        document.body.addEventListener('touchmove', function (e) {
-		  e.preventDefault();
-		}, {passive: false});
+		var touch1 = function(){
+		  document.querySelector(‘body‘).addEventListener(‘touchmove‘, function (e) {
+		    e.preventDefault();
+		  });
+		}
  </script>
 
 
